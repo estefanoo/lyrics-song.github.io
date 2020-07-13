@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{ background-color: #bed3d8; }
+
+/* navbar */
+
+.nav{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: #bed3d8;
+    padding: 15px 0;
+    text-align: center;
+    z-index: 1;
+}
+
+.nav__title{
+    font-family: 'Poiret One', cursive;
+    letter-spacing: 6px;
+    color: white;
+}
+
+/* container form and results */
+
+.container{
+    background-image: url('../img/caset.jpg');
+    background-size: 200px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center ;
+    width: 100%;
+    height: auto;
+    font-family: 'Nunito', sans-serif;
+    padding: 100px 20px 20px 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+/* form */
+
+/* field incomplete: message error */
+
+.form__message--error{
+   background-color: rgba(245, 17, 17, 0.8);
+   color: white;
+   padding: 10px 0;
+   border-radius: 20px;
+   transition: .5s;
+}
+
+.form{
+    width: 500px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+
+.title{ font-size: 30px; }
+
+.form__container-field{ padding: 15px;}
+
+.form__label{ font-weight: bold; }
+
+.form__input{
+    border: none;
+    border-bottom: 2px solid #819ba0;
+    background-color: transparent;
+    width: 50%;
+    height: 40px;
+    text-align: center;
+}
+
+.form__input:focus{
+    outline: none;
+    border: 3px solid #819ba0;
+}
+
+.form__input::placeholder{ text-align: center;}
+
+
+/* form: buton search */
+
+.boton{ margin-top: 20px; }
+
+.boton__input{
+    outline: none;
+    padding: 10px 30px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    background-color: #819ba0;
+    color: white;
+    border-radius: 30px;
+}
+
+.boton__input:hover{ background-color: #789196; }
+
+
+/* results */
+
+.container__result{
+    width: 500px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+/* result: title */
+
+
+.results{ white-space: pre-wrap; }
+
+
+
+
+/* /////////////// */
+/*  Media Queries  */
+/* ////////////// */
+
+
+@media (max-width:1040px){
+
+    .form{ width: 350px; }    
+
+    .container__result{ width: 350px; }
+}
+
+@media (max-width:768px){
+    .form{ width: 360px; }    
+
+    .form__input{ width: 80%; }
+    
+    .container__result{
+        margin-top: 50px;
+        width: 360px;
+    }
+}

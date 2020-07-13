@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Letter Music</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <header>
+        <nav class="nav">
+            <h1 class="nav__title"> Song Lyrics </h1>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section class="form">
+            <!-- form__message--error -->
+            <div class="form__message"></div>
+            
+            <h2 class="title">Search</h2>
+            <span class="form__span">(Complete all fields)</span>
+            
+            <form class="form__form-fields" id="form__search" action="#" >
+                
+                
+                <div class="form__container-field">
+                    <label class="form__label" for="artist">Artist </label>
+                    <br>
+                    <input class="form__input" type="text" id="artist" placeholder="name artist...">
+                </div>
+
+                <div class="form__container-field">
+                    <label class="form__label" for="song">Song </label>
+                    <br>
+                    <input class="form__input" type="text" id="song" placeholder="name song...">
+                </div>
+                
+                <div class="boton">
+                    <input class="boton__input" type="submit" value="Search">
+                </div>
+            
+            </form>
+
+        </section>
+
+        <section class="container__result">
+            <h2 class="title">Results</h2>
+            <div class="results">
+            </div>
+        </section>
+
+    </main>
+
+    <script src="js/app.js" type="module"></script>
+</body>
+</html>
